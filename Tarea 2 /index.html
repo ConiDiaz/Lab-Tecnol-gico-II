@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./sketch.js" type="module"></script>
+    <style>
+        body {
+		        font-family: "Helvetica Neue", Helvetica, sans-serif;
+		        font-size: 12px;
+        }
+ 
+        .bars rect{
+            fill: rgb(147, 0, 152); /* Cambio de color */
+        }
+
+        .bars rect:hover{
+            fill: rgb(1, 158, 106); /* Cambio de color */
+        }
+    </style>
+</head>
+<body>
+    <svg width="800" height="600"> <!-- Agrande la zona de trabajo -->
+        <g class="labels"></g>
+        <g class="bars" transform="translate(5, 0)"></g> <!-- Desde donde comienzan las barras se cambio -->
+    </svg>
+</body>
+</html>
