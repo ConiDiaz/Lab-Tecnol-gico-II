@@ -1,1 +1,1 @@
-# Lab-Tecno-II
+# Lab-Tecnol-gico-II
