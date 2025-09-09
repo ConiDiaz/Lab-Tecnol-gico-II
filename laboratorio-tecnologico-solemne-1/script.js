@@ -88,7 +88,7 @@ async function cargar() {
     })
     .attr("text-anchor", "start")
     .attr("alignment-baseline", "middle")
-    .style("font-size", "12px")
+    .style("font-size", "11px")
     .attr("fill", "white")
     .text(d => d);
 }
