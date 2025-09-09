@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Temperaturas de Junio 2025</title>
+  <style>
+    body {
+      background: white;
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, sans-serif;
+    }
+    .afiche {
+      background: #1D1D1B;
+      color: white;
+      width: 900px;
+      padding: 40px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 20px;
+    }
+    .texto h1 {
+      font-size: 90px;
+      margin: 0;
+      line-height: 1;
+    }
+    .texto p {
+      font-size: 19px;
+      margin: 10px;
+      max-width: 520px;
+    }
+    .leyenda-container {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .leyenda-titulo {
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .leyenda-boxes {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .leyenda-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .leyenda-color {
+      width: 80px;
+      height: 80px;  
+    }
+    .leyenda-text {
+      font-size: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="afiche">
+    <div class="texto">
+      <h1>Temperaturas de</h1>
+      <h1>Junio 2025</h1>
+      <p>Muestra las temperaturas máximas registradas en 35 estaciones meteorológicas a lo largo de todo Chile.</p>
+    </div>
+
+    <svg id="grafico" width="900" height="1100"></svg>
+
+    <div class="leyenda-container">
+      <div class="leyenda-titulo">Escala de temperaturas</div>
+      <div class="leyenda-boxes">
+        <div class="leyenda-item"><div class="leyenda-color" style="background:#00BFFF"></div><div class="leyenda-text">-5°</div></div>
+        <div class="leyenda-item"><div class="leyenda-color" style="background:#1F90FF"></div><div class="leyenda-text">0°</div></div>
+        <div class="leyenda-item"><div class="leyenda-color" style="background:#00FA9A"></div><div class="leyenda-text">5°</div></div>
+        <div class="leyenda-item"><div class="leyenda-color" style="background:#7CFC00"></div><div class="leyenda-text">10°</div></div>
+        <div class="leyenda-item"><div class="leyenda-color" style="background:#FFFF00"></div><div class="leyenda-text">15°</div></div>
+        <div class="leyenda-item"><div class="leyenda-color" style="background:#FFA500"></div><div class="leyenda-text">20°</div></div>
+        <div class="leyenda-item"><div class="leyenda-color" style="background:#FF4500"></div><div class="leyenda-text">25°</div></div>
+        <div class="leyenda-item"><div class="leyenda-color" style="background:#FF0000"></div><div class="leyenda-text">30°</div></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
